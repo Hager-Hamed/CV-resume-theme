@@ -1,0 +1,119 @@
+/* start-style:: Customization primary Color */
+:root {
+  --bs-primary-rgb: 189, 93, 56;
+  --nav-width: 250px;
+}
+
+/*
+.nav-link:hover,
+.nav-link:focus {
+	--bs-nav-link-hover-color: rgb(244, 98, 58);
+}
+
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+	--bs-navbar-active-color: rgb(244, 98, 58);
+}
+
+.btn-primary {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #f4623a;
+	--bs-btn-border-color: #f4623a;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #cf5331;
+	--bs-btn-hover-border-color: #c34e2e;
+	--bs-btn-focus-shadow-rgb: 246, 122, 88;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #c34e2e;
+	--bs-btn-active-border-color: #b74a2c;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #f4623a;
+	--bs-btn-disabled-border-color: #f4623a;
+} */
+/* end-style:: Customization primary Color */
+
+/* start-style:: Typography  */
+body {
+  --bs-body-font-family: "Mulish", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: rgb(52, 58, 64) !important;
+}
+
+.font-heading {
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.font-text {
+  font-family: "Mulish", sans-serif;
+}
+/* end-style:: Typography */
+
+/* start-style:: Sections styles */
+.sec--hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("../images/hero/bg-masthead.jpg");
+}
+
+.sec {
+  padding: 8rem 0;
+}
+/* end-style:: Sections styles */
+
+.navbar-brand__image {
+  width: 140px;
+  height: 140px;
+}
+
+/* start-style:: Divider Component  */
+hr.divider {
+  border: 0;
+  border-top: 1px solid;
+  border-color: #6c757d;
+  opacity: 0.25;
+  margin: 0;
+}
+/* end-style::  Divider Component  */
+
+/* start-style::  social-list  component */
+.social-list__link {
+  width: 55px;
+  height: 55px;
+  background-color: #495057;
+  text-decoration: none;
+}
+
+/* end-style:: social-list  component */
+
+@media (min-width: 992px) {
+  body {
+    margin-left: var(--nav-width);
+  }
+
+  .navbar {
+    width: var(--nav-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .sec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
